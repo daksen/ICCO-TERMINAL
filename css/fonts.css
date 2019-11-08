@@ -1,0 +1,17 @@
+/* Ubuntu-Regular */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+    src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+/* UbuntuMono-Regular */
+@font-face {
+    font-family: 'Ubuntu mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/UbuntuMono-Regular.ttf');
+    src: local('UbuntuMono Regular'), local('UbuntuMono-Regular'), url('../fonts/UbuntuMono-Regular.ttf') format('truetype');
+}

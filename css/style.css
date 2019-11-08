@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(45deg, #57003f 0%,#f57453 100%);
+    font-family: 'Ubuntu';
+    margin: 0;
+    padding: 0;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Polaroid {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 62%;
+    width: 170px;
+    text-align:center;
+    border:solid 1rem #ffffff;
+    background:#ffffff;
+    box-shadow:0 0 10px 0px rgba(50, 50, 50, 0.25);
+}
+.Terminal {
+    width: 700px;
+    height: 400px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,.5);
+}
+.Terminal__Toolbar {
+    background: linear-gradient(#504b45 0%,#3c3b37 100%);
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.Toolbar__buttons {
+    display: flex;
+    align-items: center;
+}
+.Toolbar__button {
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 0;
+    font-size: 7px;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 1px 0px #41403A,0px 1px 1px 0px #474642;
+    border: none;
+    margin-right: 4px;
+}
+.Toolbar__button:hover {
+    cursor: pointer;
+}
+.Toolbar__button--exit {
+    background: #f25d2b;
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+    background-clip: padding-box;
+}
+.Toolbar__button:focus {
+    outline: none;
+}
+.Toolbar__user {
+    color: #d5d0ce;
+    margin: 0;
+    margin-left: 6px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.Terminal__body {
+    background: rgba(56, 4, 40, .9);
+    height: calc(100% - 44px);
+    margin-top: -1px;
+    padding: 10px;
+    font-family: 'Ubuntu mono';
+    font-size: 20px;
+}
+.Terminal__text {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.Terminal__Prompt {
+    display: inline;
+}
+.Prompt__user {
+    color: #87d441;
+    float: left;
+}
+.Prompt__location {
+    color: #6d85a9;
+    float: left;
+}
+.Prompt__dollar {
+    color: #ddd;
+    float: left;
+}
+.Prompt__text {
+    color: #ddd;
+}
+
+.Prompt__cursor {
+    display: inline-block;
+    height: 20px;
+    width: 8px;
+    background: white;
+    margin-left: 8px;
+    animation: 800ms ease infinite alternate blink;
+    float: left;
+}
+
+.typed-cursor {
+    color: #ddd;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
